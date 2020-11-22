@@ -26,6 +26,7 @@ interface TopBarProps {
 const useStyles = makeStyles((theme) => ({
   root: {
     backgroundColor: theme.palette.background.default,
+    boxShadow: '0 0px',
   },
   toolbar: {
     height: 64,
