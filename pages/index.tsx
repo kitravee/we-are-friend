@@ -7,13 +7,13 @@ import HomeView from '../src/views/home/HomeView';
 const Home: FC = () => {
   const { t } = useTranslation();
   return (
-    <div>
+    <>
       <Head>
         <title>{t('home.header.title')}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <HomeView />
-    </div>
+    </>
   );
 };
 export default Home;

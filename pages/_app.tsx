@@ -10,6 +10,7 @@ import { jssPreset, StylesProvider, ThemeProvider } from '@material-ui/core';
 import { NextComponentType } from 'next';
 import { createTheme } from 'src/theme';
 import useSettings from 'src/hooks/useSettings';
+import { THEMES } from 'src/constants';
 
 const MyApp: NextComponentType<AppContext, AppInitialProps, AppProps> = ({
   Component,
@@ -24,7 +25,8 @@ const MyApp: NextComponentType<AppContext, AppInitialProps, AppProps> = ({
   const theme = createTheme({
     direction: settings.direction,
     responsiveFontSizes: settings.responsiveFontSizes,
-    theme: settings.theme,
+    // theme: settings.theme,
+    theme: THEMES.LIGHT,
   });
 
   useEffect(() => {
