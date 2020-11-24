@@ -7,6 +7,7 @@ import Features from './Features';
 import Testimonials from './Testimonials';
 import CTA from './CTA';
 import FAQS from './FAQS';
+import Review from './Reviews';
 
 // const useStyles = makeStyles(() => ({
 //   root: {},
@@ -21,6 +22,7 @@ const HomeView: FC = () => (
     <Testimonials />
     <CTA />
     <FAQS />
+    <Review />
   </>
 
   // </Page>

@@ -8,6 +8,7 @@ import {
   Grid,
   Typography,
   makeStyles,
+  Button,
 } from '@material-ui/core';
 import type { Theme } from 'src/theme';
 
@@ -21,8 +22,8 @@ const useStyles = makeStyles((theme: Theme) => ({
     paddingTop: 200,
     paddingBottom: 200,
     [theme.breakpoints.down('md')]: {
-      paddingTop: 60,
-      paddingBottom: 60,
+      paddingTop: 100,
+      paddingBottom: 100,
     },
   },
   technologyIcon: {
@@ -109,7 +110,13 @@ const Hero: FC<HeroProps> = ({ className, ...rest }) => {
                 </Grid>
               </Box>
               <Box mt={3}>
-                <img
+                <Button variant="contained" color="primary">
+                  Primary
+                </Button>
+                <Button variant="text" color="secondary">
+                  Secondary
+                </Button>
+                {/* <img
                   alt="Javascript"
                   className={classes.technologyIcon}
                   src="/static/images/javascript.svg"
@@ -118,7 +125,7 @@ const Hero: FC<HeroProps> = ({ className, ...rest }) => {
                   alt="Typescript"
                   className={classes.technologyIcon}
                   src="/static/images/typescript.svg"
-                />
+                /> */}
               </Box>
             </Box>
           </Grid>
