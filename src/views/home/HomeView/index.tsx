@@ -21,8 +21,8 @@ const HomeView: FC = () => (
     <Features />
     <Testimonials />
     <CTA />
-    <FAQS />
     <Review />
+    <FAQS />
   </>
 
   // </Page>

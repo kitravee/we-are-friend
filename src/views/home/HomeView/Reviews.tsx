@@ -24,7 +24,7 @@ interface ReviewProps {
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
-    backgroundColor: theme.palette.background.default,
+    backgroundColor: theme.palette.background.dark,
     paddingTop: 128,
     paddingBottom: 128,
   },
@@ -32,7 +32,8 @@ const useStyles = makeStyles((theme: Theme) => ({
     marginLeft: theme.spacing(2),
   },
   media: {
-    height: 140,
+    // height: '100%',
+    paddingTop: '72.5%', // 16:9
   },
   card: {
     borderRadius: 16,
@@ -100,9 +101,9 @@ const Review: FC<ReviewProps> = ({ className, ...rest }) => {
                       color="textSecondary"
                       component="p"
                     >
-                      Lizards are a widespread group of squamate reptiles,
-                      with over 6,000 species, ranging across all continents
-                      except Antarctica
+                      Lizards are a widespread group of squamate reptiles, with
+                      over 6,000 species, ranging across all continents except
+                      Antarctica
                     </Typography>
                   </CardContent>
                 </CardActionArea>
