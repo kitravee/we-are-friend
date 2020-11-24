@@ -42,7 +42,10 @@ interface ThemeOptions {
 
 const baseOptions: ThemeOptions = {
   direction: 'ltr',
-  typography,
+  typography: {
+    ...typography,
+    // fontFamily: 'Raleway',
+  },
   overrides: {
     MuiLinearProgress: {
       root: {
